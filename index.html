@@ -5,19 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Weather App</title>
 </head>
 <body>
-    <div>
+    <h1>Weather App Project</h1>
+        <form action="" method="post">
 
-        <h1>Weather App Project</h1>
-    </div>
-    <div>
-        <p>Let's get to work!</p>
+            <label for="cityInput">City Name: </label>
+            <input id="cityInput" type="text" name="cityName">
+            <button class="submit">Search</button>
+        </form>
+    <!-- even when referenced in HTML doc, items created separately through JS do not display. Unless you create a dirname__ route in js.-->
 
-    </div>
-
-    <script src="app.js"></script>
-    <!-- even when referenced in HTML doc, items created separately through JS do not display. -->
+    <!-- app.js works on its own but does not refer to css stylings.
+    Also, html can not initate the query result from the first page. -->
 </body>
 </html>
