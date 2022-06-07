@@ -8,16 +8,62 @@
     <title>Weather App</title>
 </head>
 <body>
-    <h1>Weather App Project</h1>
+    <header>
+        <h1>Weather App Project</h1>
+        <p>API provided by www.weatherapi.com</p>
+    </header>
+        <div id="container">
+
         <form action="" method="post">
-
-            <label for="cityInput">City Name: </label>
-            <input id="cityInput" type="text" name="cityName">
-            <button class="submit">Search</button>
+            <input class="search-bar search" placeholder="Enter Major City" id="cityInput" type="text" name="cityName">
+            <button class="major search">Search Major City</button>
+            <button class="current search">Current Location</button>
         </form>
-    <!-- even when referenced in HTML doc, items created separately through JS do not display. Unless you create a dirname__ route in js.-->
+        <div id="weatherInfo">
+            <h3>Aiken</h3>
+            <div class="date">
+                <span class="currentDay">Day</span>
+                <span class="currentTime">Time</span>
+            </div>
+            <p>Weather Description</p>
+            <div class="temperature">
+                <img src="//cdn.weatherapi.com/weather/64x64/day/113.png" alt="weather">
+                <span id="fahrenheit" class="active">F</span> | <span id="celcius" class="">C</span>
+                <span class="currentTemp">90</span>
+            </div>
 
-    <!-- app.js works on its own but does not refer to css stylings.
-    Also, html can not initate the query result from the first page. -->
+            <h4>This week's forecast will be...</h3>
+                <div id="forecast">
+                    <div id="one" class="info">
+                        <img src="//cdn.weatherapi.com/weather/64x64/day/116.png" alt="weather">
+                        <h5 class="degree">80</h5>
+                    </div>
+                    <div id="two" class="info">
+                        <img src="//cdn.weatherapi.com/weather/64x64/day/122.png" alt="weather">
+                        <h5 class="degree">82</h5>
+                    </div>
+                    <div id="three" class="info">
+                        <img src="//cdn.weatherapi.com/weather/64x64/day/248.png" alt="weather">
+                        <h5 class="degree">77</h5>
+                    </div>
+                    <div id="four" class="info">
+                        <img src="//cdn.weatherapi.com/weather/64x64/day/362.png" alt="weather">
+                        <h5 class="degree">80</h5>
+                    </div>
+                    <div id="five" class="info">
+                        <img src="//cdn.weatherapi.com/weather/64x64/day/395.png" alt="weather">
+                        <h5 class="degree">76</h5>
+                    </div>
+                    <div id="six" class="info">
+                        <img src="//cdn.weatherapi.com/weather/64x64/day/113.png" alt="weather">
+                        <h5 class="degree">85</h5>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <footer>
+        <p>Brought to Life by <a href="https://www.orionpalmer.com" target="_">Orion Palmer</span></p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

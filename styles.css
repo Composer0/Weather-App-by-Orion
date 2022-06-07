@@ -1,10 +1,96 @@
-body {
+body, form, #weatherInfo {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
+header, footer {
+    color: rgb(17, 17, 17);
+    width: 100%;
+    text-align: center;
+    z-index: -1;
+}
+
+header {
+    top:  30px;
+}
+
+footer {
+    position: absolute;
+    bottom: 30px;
+}
+
 p {
+    color: rgb(46, 45, 45);
+}
+
+body {
+    background-color: rgba(255, 235, 205, 0.5);
+    height: auto;
+    width: auto;
+}
+
+#container {
+    border-style: groove;
+    border-color: black;
+    border-radius: 1rem;
+    padding: 2rem;
+    max-width: 600px;
+    max-height: 600px;
+    background: rgb(245, 255, 112);
+}
+
+.search {
+    margin: .5rem auto;
+}
+
+
+.current, .major {
+    width: 10rem;
+    padding: 1rem;
+    color: white;
+    border: none;
+    border-radius: 5rem;
+    box-shadow: 0px 4px 1px black;
+
+}
+
+input {
+    width: 10rem;
+    padding: 1rem; 
+    border-radius: 1rem;
+    box-shadow: 0px 2px 1px black;
+    text-align: center;
+}
+
+.active {
     color: red;
+}
+
+.current {
+    background: rgb(83, 83, 117);
+}
+
+.major {
+    background: rgb(37, 129, 125);
+}
+
+#forecast {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.info {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(16, 114, 160);
+}
+
+a::after {
+    text-emphasis: none;
 }
